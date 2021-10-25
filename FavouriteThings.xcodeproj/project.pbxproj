@@ -51,7 +51,6 @@
 		BB885864272060D100400B63 = {
 			isa = PBXGroup;
 			children = (
-				BB482FCA27270DDE00EC1DC8 /* FavoriteThingsListView.swift */,
 				BB88586F272060D100400B63 /* FavouriteThings */,
 				BB88586E272060D100400B63 /* Products */,
 			);
@@ -68,6 +67,7 @@
 		BB88586F272060D100400B63 /* FavouriteThings */ = {
 			isa = PBXGroup;
 			children = (
+				BB482FCA27270DDE00EC1DC8 /* FavoriteThingsListView.swift */,
 				BB885870272060D100400B63 /* FavouriteThingsApp.swift */,
 				BB482FC92727084700EC1DC8 /* Views */,
 				BB885874272060DD00400B63 /* Assets.xcassets */,
