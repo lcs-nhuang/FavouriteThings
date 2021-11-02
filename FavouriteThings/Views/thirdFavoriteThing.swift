@@ -11,9 +11,8 @@ struct thirdFavoriteThing: View {
     var body: some View {
         ScrollView{
             VStack{
-            Image ("anime")
-                .resizable()
-                .scaledToFit()
+            PhotoCaptionView()
+                
             Text ("""
 I love to watch anime and my favorite anime is Jujutsu Kaisen.
 Every character in it is fascinating.💗

@@ -11,11 +11,11 @@ struct ContentView: View {
     var body: some View {
         ScrollView{
             VStack {
-                Image("Lucy")
-                    .resizable()
-                    .scaledToFit()
+                
+               PhotoCaptionView()
                 
                 Text("""
+    
     This is my dog Lucy.She is an Australia Shepherd. She is really beautiful and cute. Everyone likes her.
 
     Lucy is now 11 years old and I miss her so much.❤️

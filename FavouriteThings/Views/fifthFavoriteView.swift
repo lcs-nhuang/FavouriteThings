@@ -12,24 +12,7 @@ struct fifthFavoriteView: View {
         ScrollView{
             VStack {
                 
-                VStack(alignment: .leading) {
-                    
-                    Image("Drawing")
-                        .resizable()
-                    .scaledToFit()
-                   
-                    VStack(alignment: .leading) {
-                       
-                       Text("A really beautiful sunset")
-                            .font(.caption)
-                            .bold()
-                        
-                        Text("Drew by Nicole")
-                            .font(.caption)
-                        
-                    }
-                    .padding(.horizontal)
-                }
+                PhotoCaptionView()
                
                 
                 Spacer()
@@ -56,3 +39,4 @@ struct fifthFavoriteView_Previews: PreviewProvider {
         }
     }
 }
+

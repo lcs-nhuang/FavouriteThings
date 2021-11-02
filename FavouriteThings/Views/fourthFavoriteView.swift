@@ -11,9 +11,7 @@ struct fourthFavoriteView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Image("family")
-                    .resizable()
-                    .scaledToFit()
+                PhotoCaptionView()
                 
                 Text("""
     I love my parents very much and they love me very much. This photo was taken when I was five years old and we were traveling. It can be seen that I am very uncooperative in this photo.🥸

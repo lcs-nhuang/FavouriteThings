@@ -13,16 +13,15 @@ struct scondFavoriteView: View {
         ScrollView{
             VStack (content: {
                 
-                Image("icecream")
-                    .resizable()
-                    .scaledToFit()
+                PhotoCaptionView()
                 
                 Text("""
-    Icecream is one of my favorite food and I love strawberry icecream so much. I can eat a bucket of strawberry icecream in 3 minutes.
+    
+     Icecream is one of my favorite food and I love strawberry icecream so much. I can eat a bucket of strawberry icecream in 3 minutes.
 
-    I'm just kidding. I can't eat that much.
-
-    ps. Coconut and pineapple haagen-Dazs are also very good. You can find them in FoodLand😋
+     I'm just kidding. I can't eat that much.
+    
+     ps. Coconut and pineapple haagen-Dazs are also very good. You can find them in FoodLand😋
     """)
                 Spacer()
                 
