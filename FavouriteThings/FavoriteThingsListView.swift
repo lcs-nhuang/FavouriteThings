@@ -13,39 +13,27 @@ struct FavoriteThingsListView: View {
             
             
     NavigationLink(destination:ContentView()){
-        HStack{
-            Image("Lucy")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 50, height: 50, alignment: .center)
-                .clipped()
-            VStack(alignment: .leading){
-                Text("Lucy")
-                    .bold()
-                Text("My dog lucy is the cutst dog ever")
-                    .font(.caption)
-            }
-        }
+        ListCaptionView(photoName: "Lucy", title: "Lucy", listCaption: "My dog lucy is the cutest dog ever")
     }
             
     NavigationLink(destination:scondFavoriteView()){
-        Text("Strawberry Icecream")
+        ListCaptionView(photoName: "icecream", title: "Ice Cream", listCaption: "I love ice cream！")
                     }
             
     NavigationLink(destination:thirdFavoriteThing()){
-        Text("Anime")
+        ListCaptionView(photoName: "anime", title: "Anime", listCaption: "Are you a anime lover too?")
                     }
             
     NavigationLink(destination:fourthFavoriteView()){
-        Text("Family")
+        ListCaptionView(photoName: "family", title: "Family", listCaption: "I have a really good family")
                     }
             
     NavigationLink(destination:fifthFavoriteView()){
-        Text("Drawing")
+        ListCaptionView(photoName: "Drawing", title: "Drawing", listCaption: "Drawing is one of my favorite things to do")
                     }
             
     NavigationLink(destination:sixthFavoriteView()){
-        Text("Hotpot")
+        ListCaptionView(photoName: "Hotpot", title: "Hotpot", listCaption: "It is so delicious！")
                     }
             
             
@@ -62,5 +50,23 @@ struct FavoriteThingsListView_Previews: PreviewProvider {
         }
         
         
+    }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        HStack{
+            Image("Lucy")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50, alignment: .center)
+                .clipped()
+            VStack(alignment: .leading){
+                Text("Lucy")
+                    .bold()
+                Text("My dog lucy is the cutst dog ever")
+                    .font(.caption)
+            }
+        }
     }
 }
