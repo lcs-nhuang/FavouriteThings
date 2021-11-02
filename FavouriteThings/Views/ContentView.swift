@@ -24,12 +24,15 @@ struct ContentView: View {
                 Spacer()
             }
         }
+        .navigationTitle("Lucy")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView{
+            ContentView()
+        }
     }
 }
 

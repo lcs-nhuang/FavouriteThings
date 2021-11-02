@@ -29,12 +29,14 @@ struct scondFavoriteView: View {
             }
           )
         }
-        
+        .navigationTitle("Ice Cream")
     }
 }
 
 struct scondFavoriteView_Previews: PreviewProvider {
     static var previews: some View {
-        scondFavoriteView()
+        NavigationView{
+            scondFavoriteView()
+        }
     }
 }

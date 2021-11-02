@@ -21,11 +21,14 @@ Every character in it is fascinating.💗
             Spacer()
             }
         }
+        .navigationTitle("Anime")
     }
 }
 
 struct thirdFavoriteThing_Previews: PreviewProvider {
     static var previews: some View {
-        thirdFavoriteThing()
+        NavigationView{
+            thirdFavoriteThing()
+        }
     }
 }
