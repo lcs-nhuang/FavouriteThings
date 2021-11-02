@@ -11,7 +11,7 @@ struct sixthFavoriteView: View {
     var body: some View {
         ScrollView{
             VStack {
-                PhotoCaptionView()
+                PhotoCaptionView(imageName: "Hotpot", caption: "Classic Hotpot", credit: "A good Photographer from the internet")
                 
                 Text("""
     Hot pot is one of my favorite Chinese food. It is like a boiling pot of soup. We blanch the ingredients and eat them with sauce. What I described may not be that delicious, but trust me, it taste really good.

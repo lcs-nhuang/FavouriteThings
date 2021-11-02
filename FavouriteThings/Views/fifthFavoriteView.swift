@@ -12,8 +12,8 @@ struct fifthFavoriteView: View {
         ScrollView{
             VStack {
                 
-                PhotoCaptionView()
-               
+                PhotoCaptionView(imageName: "Drawing", caption: "A beautiful sunset", credit: "By Nicole")
+        
                 
                 Spacer()
                 Text("""

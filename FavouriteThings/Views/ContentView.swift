@@ -12,7 +12,7 @@ struct ContentView: View {
         ScrollView{
             VStack {
                 
-               PhotoCaptionView()
+                PhotoCaptionView(imageName: "Lucy", caption:"A picture of Lucy" , credit: "Took by Nicole")
                 
                 Text("""
     

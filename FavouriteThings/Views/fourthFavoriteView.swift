@@ -11,7 +11,7 @@ struct fourthFavoriteView: View {
     var body: some View {
         ScrollView{
             VStack{
-                PhotoCaptionView()
+                PhotoCaptionView(imageName: "family", caption: "A photo of me and my family", credit: "By my aunt")
                 
                 Text("""
     I love my parents very much and they love me very much. This photo was taken when I was five years old and we were traveling. It can be seen that I am very uncooperative in this photo.🥸

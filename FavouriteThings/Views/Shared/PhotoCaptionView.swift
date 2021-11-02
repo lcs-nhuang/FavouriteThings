@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct PhotoCaptionView: View {
+//    This is applying ABSTRACTION
+    let imageName: String
+    let caption: String
+    let credit: String
+    
+//    Mark:Computed Property
     var body: some View {
         VStack(alignment: .leading) {
             
-            Image("Drawing")
+            Image(imageName)
                 .resizable()
                 .scaledToFit()
             
             VStack(alignment: .leading) {
                 
-                Text("A really beautiful sunset")
+                Text(caption)
                     .font(.caption)
                     .bold()
                 
-                Text("Drew by Nicole")
+                Text(credit)
                     .font(.caption)
                 
             }
@@ -32,6 +38,8 @@ struct PhotoCaptionView: View {
 
 struct PhotoCaptionView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoCaptionView()
+        PhotoCaptionView(imageName: "Drawing",
+                         caption: "A beautiful sunset",
+                         credit: "Drew by Nicole")
     }
 }

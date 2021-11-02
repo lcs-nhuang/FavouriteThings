@@ -12,22 +12,40 @@ struct FavoriteThingsListView: View {
         List {
             
             
-    NavigationLink(destination:ContentView()){Text("Lucy")
+    NavigationLink(destination:ContentView()){
+        HStack{
+            Image("Lucy")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50, alignment: .center)
+                .clipped()
+            VStack(alignment: .leading){
+                Text("Lucy")
+                    .bold()
+                Text("My dog lucy is the cutst dog ever")
+                    .font(.caption)
+            }
+        }
+    }
+            
+    NavigationLink(destination:scondFavoriteView()){
+        Text("Strawberry Icecream")
                     }
             
-    NavigationLink(destination:scondFavoriteView()){Text("Strawberry Icecream")
+    NavigationLink(destination:thirdFavoriteThing()){
+        Text("Anime")
                     }
             
-    NavigationLink(destination:thirdFavoriteThing()){Text("Anime")
+    NavigationLink(destination:fourthFavoriteView()){
+        Text("Family")
                     }
             
-    NavigationLink(destination:fourthFavoriteView()){Text("Family")
+    NavigationLink(destination:fifthFavoriteView()){
+        Text("Drawing")
                     }
             
-    NavigationLink(destination:fifthFavoriteView()){Text("Drawing")
-                    }
-            
-    NavigationLink(destination:sixthFavoriteView()){Text("Hotpot")
+    NavigationLink(destination:sixthFavoriteView()){
+        Text("Hotpot")
                     }
             
             

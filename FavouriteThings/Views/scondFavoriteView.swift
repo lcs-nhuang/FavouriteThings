@@ -13,9 +13,9 @@ struct scondFavoriteView: View {
         ScrollView{
             VStack (content: {
                 
-                PhotoCaptionView()
-                
-                Text("""
+                PhotoCaptionView(imageName: "icecream", caption: "A photo of delicious strawb icecream", credit: "From the internet")
+                    
+            Text("""
     
      Icecream is one of my favorite food and I love strawberry icecream so much. I can eat a bucket of strawberry icecream in 3 minutes.
 
