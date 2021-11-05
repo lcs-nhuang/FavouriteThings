@@ -21,7 +21,7 @@ struct FavoriteThingsListView: View {
                     }
             
     NavigationLink(destination:thirdFavoriteThing()){
-        ListCaptionView(photoName: "anime", title: "Anime", listCaption: "Are you a anime lover too?")
+        ListCaptionView(photoName: "anime", title: "Anime", listCaption: "Are you an anime lover too?")
                     }
             
     NavigationLink(destination:fourthFavoriteView()){
